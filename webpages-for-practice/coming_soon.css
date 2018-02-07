@@ -1,0 +1,26 @@
+.cover_image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+.logo {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+}
+.text_in_the_middle {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 64px!important;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid white;
+    width: 60%;
+}

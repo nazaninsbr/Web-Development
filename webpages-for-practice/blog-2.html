@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<title>بلاگ</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style/css/blog.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src=".https://www.w3schools.com/code/tryit.asp?filename=FI57TOPKG1LL"></script>
+</head>
+    <body>
+        <section class="blog_page">
+            <div class="container">
+                <div class="col-md-2 details">
+                <div class="details_logo">
+                    <a href="./homePage.html">
+                        <img class="img-responsive" src="./style/image/logo.png">
+                    </a>
+                </div>
+                <nav id="main_nav">
+                    <ul class="font_cls">
+                        <li>
+                            <a href="./contact_us.html">ارتباط با ما</a>
+                        </li>
+                        <li>
+                            <a href="./team.html">تیم اف‌یک</a>
+                        </li>
+                        <li>
+                            <a href="./edition.html">شماره‌ها</a>
+                        </li>
+                        <li>
+                            <a href="./articles.html">مقالات و گزارش‌ها</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="info">
+                    <p class="font_cls">اگر دوست دارید در نوشتن پست با ما همکاری کنید، با استفاده از ایمیل زیر با ما در ارتباط باشید </p>
+                    <a class="mail" href="mailto:f1@ut.ac.ir">f1@ut.ac.ir</a>
+                </div>
+            </div>
+                <div class="col-md-10" id="slideshow">
+                    <img class="mySlides img-responsive" src="./style/image/slideshow_2.jpg">
+                    <img class="mySlides img-responsive" src="./style/image/slideshow_1.jpg">
+                    <img class="mySlides img-responsive" src="./style/image/slideshow_4.jpg">
+                    <img class="mySlides img-responsive" src="./style/image/slideshow_5.jpg">
+                </div>
+            </div>
+        </section>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }   
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 6000); // Change image every 2 seconds
+            }
+        </script>
+    </body>
+</html>

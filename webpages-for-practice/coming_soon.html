@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<title>
+        اف‌یک
+    </title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style/css/coming_soon.css">
+</head>
+<body>
+    
+    <img class="cover_image" src="./style/image/coming_soon4.jpg">
+    <a href="./home_page.html">
+        <img class="logo" src="./style/image/logo.png">
+    </a>
+    
+    <div class="text_in_the_middle">
+        <h1>
+            به زودی
+        </h1>
+        <hr>
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" language="JavaScript">
+        function set_body_height() { // set body height = window height
+            $('body').height($(window).height());
+        }
+        $(document).ready(function() {
+            $(window).bind('resize', set_body_height);
+            set_body_height();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    display: block;
+    background-color: #F6F8F9;
+    font:14.5px/25px yekan;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font:14px/20px yekan;
+}
+.nav_bar {
+    height: 70px;
+    margin-top: 30px;
+}
+.highest_row {
+    width: 1280px;
+    height: 150px;
+}
+.logo_header {
+    position: relative;
+    top: 20px;
+    left: 577px;
+    width: inherit;
+}
+.logo_image {
+    max-width: 60px;
+}
+.line {
+    position: relative;
+    margin: 0 5rem;
+    height: 1px;
+    background: black;
+    margin-top: 3.5rem;
+    width: 5%;
+    left: 525px;
+}
+#page_color {
+    background: linear-gradient(to top, rgba(246, 248, 249,0.8), rgba(201, 225, 242,1)); /*Standard*/
+}
+.intro_content {
+    margin: 30px;
+    text-align: center;
+}
+.intro_content h1 {
+    margin-bottom: 30px;
+    color: #1199D8;
+}
+.intro_content p {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+}
+#list_articles container {
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+#list_articles container row{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.card {
+    box-shadow: 4px 6px 8px 0px rgba(46,61,73,0.2);
+    height: 340px;
+    background-color: white;
+    padding: 0px 0px;
+    margin: 0px 10px;
+}
+.card a {
+    text-decoration: none;
+    color: black;
+}
+.card_image {
+    background-image:  url("./image/hack.jpeg");
+    background-size:110%;
+    margin: 0px 0px;
+    height: 200px;
+    width: 100%;
+    
+}
+.card_overlay_1 {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    opacity: 0.4;
+}
+.card_overlay_2 {
+    height: 100%;
+    width: 100%;
+    background-color: orchid;
+    opacity: 0.4;
+}
+.card_overlay_3 {
+    height: 100%;
+    width: 100%;
+    background-color: darkgreen;
+    opacity: 0.4;
+}
+.card_description h4{
+    text-align: center;
+}
+.card_description p{
+    text-align: right;
+    position: relative;
+    right: 15px;
+    margin-top: 25px;
+}
+.card_image span{
+    font:12px/25px yekan;
+    position: relative;
+    background-color: white;
+    width: 10px;
+    top: 0px;
+    left: 5px;
+    color: royalblue;
+    opacity: 1;
+}
