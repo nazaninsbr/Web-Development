@@ -1,0 +1,14 @@
+* {
+	font: 14px, sans-serif;
+}
+body{
+	background-color: gray;
+}
+.button{
+	text-decoration: none;
+	color: white;
+	background-color: blue;
+	padding: 10px 10px;
+	border-radius: 15% 15%;
+	box-shadow: 1px 2px 5px black;
+}

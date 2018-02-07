@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Menu</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body class="menu menu-open">
+
+	<header>
+		<a href="#" class="menu-toggle">Toggle</a>
+		<nav class="menu-side">
+			this is a side menu
+		</nav>
+	</header>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		(function(){
+			var body = $('body');
+			$('.menu-toggle').bind('click', function(){
+				body.toggleClass('menu-open');
+				return false;
+			});
+		})();
+	</script>
+</body>
+</html>

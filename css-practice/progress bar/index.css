@@ -1,0 +1,19 @@
+.container{
+	width: 400px;
+}
+.bar{
+	width: 100%;
+	background-color: #eee;
+	padding: 5px 3px;
+	border-radius: 2px;
+	box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.bar_fill{
+	height: 20px;
+	width: 60%;
+	background-color: green;
+	border-radius: 3px;
+
+	-webkit-transition: 0.8s ease;
+	transition: 0.8s ease;
+}

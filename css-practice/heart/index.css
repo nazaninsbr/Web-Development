@@ -1,0 +1,30 @@
+.heart{
+	position: relative;
+	margin: 20px;
+	width: 200px;
+	height: 170px;
+}
+.heart:before, 
+.heart:after{
+	position: absolute;
+	content: "";
+	width: 100px;
+	height: 160px;
+	background-color: red;
+	border-radius: 50px 50px 0 0;
+	/*content: "Hello";*/
+}
+.heart:before{
+	left: 100px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+}
+.heart:after{
+	left:0px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+}
