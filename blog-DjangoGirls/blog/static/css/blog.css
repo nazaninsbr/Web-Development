@@ -1,0 +1,11 @@
+h1 a {
+	color:blue;
+	font-family: 'Lobster';
+}
+
+.header {
+	color: red;
+}
+body {
+	padding-left: 10px;
+}
