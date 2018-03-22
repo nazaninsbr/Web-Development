@@ -1,10 +1,9 @@
-from django.http import HttpResponse
 from django.template import loader
-
 from .models import Question
 from .models import Choice
 from django.shortcuts import get_object_or_404, render
-
+from django.http import HttpResponseRedirect, HttpResponse
+from django.urls import reverse
 
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
@@ -24,11 +23,15 @@ def vote(request, question_id):
     try:
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
-        #display the question voting form
-        return render(request, './detail.html', {'question': question, 'error_message':"You didn't select a choice",})
+        # Redisplay the question voting form.
+        return render(request, './detail.html', {
+            'question': question,
+            'error_message': "You didn't select a choice.",
+        })
     else:
         selected_choice.votes += 1
         selected_choice.save()
-        #Always submit an HttpResponseRedirect after successfully dealing with POST data
-        #This prevents the form being posted twice if a user hits the back button
+        # Always return an HttpResponseRedirect after successfully dealing
+        # with POST data. This prevents data from being posted twice if a
+        # user hits the Back button.
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
