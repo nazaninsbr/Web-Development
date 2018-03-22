@@ -1,0 +1,29 @@
+body{
+	background: #2C4E5A;
+}
+.mainDiv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.mainDiv h2{
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+}
+.mainDiv input {
+	display: block;
+	font-family: sans-serif;
+	color: white;
+	width: 320px;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: rgba(0,0,0, 0.3);
+}
+.mainDiv #buttonC{
+	background: #ADDCEE;
+	text-align: center;
+	vertical-align: middle;
+}
